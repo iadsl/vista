@@ -1,6 +1,6 @@
-**Haoyu Li, Ph.D.**  
+<h4><b>Haoyu Li, Ph.D.</b></h4>  
 Principal Investigator & Assistant Professor  
-School of Computing, Grand Valley State University  
+College of Computing, Grand Valley State University  
 
 Dr. Li focuses on visualization and graphics. He earned his Ph.D. in Computer Science from The Ohio State University, where he investigated how innovative visual techniques can enhance data understanding and interactive experiences.
 
