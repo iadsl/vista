@@ -26,4 +26,10 @@ profiles:
     content: about_patrick-waga.md
     image_circular: false # crops the image to make it circular
     more_info: >
+
+  - align: right
+    image: profiles/dileep-kalisetti.jpg
+    content: about_dileep-kalisetti.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
 ---
