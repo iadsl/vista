@@ -31,5 +31,11 @@ profiles:
     image: profiles/dileep-kalisetti.jpg
     content: about_dileep-kalisetti.md
     image_circular: false # crops the image to make it circular
-    more_info: >
+    more_info: >   
+
+  - align: right
+    image: profiles/nishan-khanal.jpg
+    content: about_nishan-khanal.md
+    image_circular: false # crops the image to make it circular
+    more_info: > 
 ---
