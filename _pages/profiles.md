@@ -38,4 +38,10 @@ profiles:
     content: about_nishan-khanal.md
     image_circular: false # crops the image to make it circular
     more_info: > 
+
+  - align: right
+    image: profiles/kyle-maitner.jpg
+    content: about_kyle-maitner.md
+    image_circular: false # crops the image to make it circular
+    more_info: > 
 ---
