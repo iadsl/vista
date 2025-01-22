@@ -40,6 +40,12 @@ profiles:
     more_info: > 
 
   - align: right
+    image: profiles/erick-anangwe.jpg
+    content: about_kerick-anangwe.md
+    image_circular: false # crops the image to make it circular
+    more_info: > 
+
+  - align: right
     image: profiles/kyle-maitner.jpg
     content: about_kyle-maitner.md
     image_circular: false # crops the image to make it circular
