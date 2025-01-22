@@ -41,7 +41,7 @@ profiles:
 
   - align: right
     image: profiles/erick-anangwe.jpg
-    content: about_kerick-anangwe.md
+    content: about_erick-anangwe.md
     image_circular: false # crops the image to make it circular
     more_info: > 
 
