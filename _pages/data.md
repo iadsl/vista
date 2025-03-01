@@ -7,50 +7,82 @@ nav: true
 nav_order: 6
 ---
 
-- **Chicago Crime Data**
-  The Chicago Police Department provides detailed and extensive crime data, including information on reported crimes dating back to 2001. This dataset is ideal for analyzing urban crime trends and patterns.
-  - **Website**: [Chicago Data Portal](https://data.cityofchicago.org/)
-  - **Direct Link to Crime Data**:
-    - [Crimes - 2001 to Present](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2)
-  
-- **New York City Crime Data**
-  The NYC Open Data portal, maintained by the NYPD, offers detailed crime data. These datasets provide historical as well as current year-to-date records of reported incidents across New York City.
+**1. Crime Data**
 
-  - **Website**: [NYC Open Data](https://opendata.cityofnewyork.us/)
-  - **Direct Links to NYPD Crime Data**:
-    - [NYPD Complaint Data Historic (2006–2019)](https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i)
-    - [NYPD Complaint Data Current (2020–Present)](https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Current-Year-To-Date/5uac-w243)
+| **City**  | **Description** | 
+|-----------|----------------|
+| **Chicago**:  [Chicago Data Portal](https://data.cityofchicago.org/) \| [Crimes 2001-Present](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2) | Reported crimes since 2001 from the Chicago Police Department. | 
+| **New York City**:  [NYC Open Data](https://opendata.cityofnewyork.us/) \| [Historic Data (2006–2019)](https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i) \| [Current Data (2020–Present)](https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Current-Year-To-Date/5uac-w243) | Historical and real-time NYPD crime complaints. |
+| **Los Angeles**: [LA Open Data](https://data.lacity.org/) \| [Crime Data (2010-Present)](https://data.lacity.org/Public-Safety/Crime-Data-from-2010-to-Present/2nrs-mtv8) | LAPD crime data covering various crime types since 2010. | 
+| **Portland**: [Portland Police Open Data](https://www.portland.gov/police/open-data) \| [Calls for Service](https://public.tableau.com/app/profile/portlandpolicebureau/viz/DispatchedCallsforService/DispatchedCalls) \| [Geospatial Data](https://gis-pdx.opendata.arcgis.com/) | Crime incidents and dispatch call data. |
+| **Detroit**: [Detroit Open Data](https://data.detroitmi.gov/) \| [Reported Crimes](https://data.detroitmi.gov/search?q=crimes&tags=public%2520safety) \| [Crime Viewer](https://data.detroitmi.gov/pages/crime-viewer) | Detroit Police crime reports and public safety insights. |
+| **Grand Rapids**: [GRPD Data](https://grpd-grandrapids.hub.arcgis.com/search?groupIds=7d1304bc6c43412c87f178874d9d2fb7&q=crime) | Police department reports on crime trends and calls for service. |
+| **UK Crime Data**: [UK Police Data](https://data.police.uk/) \| [Crime Data](https://data.police.uk/data/) | Police crime records from England, Wales, and Northern Ireland. |
 
-- **Los Angeles Crime Data**
-  The City of Los Angeles Open Data Portal, maintained by the LAPD, provides detailed crime data. This dataset includes records of crimes reported since 2010 and covers a variety of crime types.
+---
 
-  - **Website**: [Los Angeles Open Data Portal](https://data.lacity.org/)
-  - **Direct Link to LAPD Crime Data**:
-    - [Crime Data from 2010 to Present](https://data.lacity.org/Public-Safety/Crime-Data-from-2010-to-Present/2nrs-mtv8)
+**2. Supporting Datasets for Crime Forecasting**
 
-- **Portland Crime Data**  
-  The Portland Police Bureau provides detailed and extensive crime data, including information on reported crimes and trends. This dataset is valuable for analyzing crime patterns across Portland neighborhoods.
-  - **Website**: [Portland Police Bureau Open Data](https://www.portland.gov/police/open-data)
-  - **Direct Links to Crime Data**:
-    - [Calls for Service](https://public.tableau.com/app/profile/portlandpolicebureau/viz/DispatchedCallsforService/DispatchedCalls)
-    - [Geospatial Open Data Portal](https://gis-pdx.opendata.arcgis.com/)
+**2.1 Points-of-Interest (POI) Data**
 
-- **Grand Rapids Crime Data**  
-  The Grand Rapids Police Department shares crime data through its transparency dashboard. This data includes reports on crime trends, calls for service, and other safety-related information for the city.
-  - **Website**: [Grand Rapids Police Department](https://www.grandrapidsmi.gov/Government/Departments/Police-Department)
-  - **Direct Links to Crime Data**:
-    - [GRPD Data](https://grpd-grandrapids.hub.arcgis.com/search?groupIds=7d1304bc6c43412c87f178874d9d2fb7&q=crime)
+| **Dataset** | **Description** |
+|------------|----------------|
+| **Google Places API**: [Google Places API](https://developers.google.com/maps/documentation/places/web-service/intro)  | POI data including bars, schools, transit stations, and more. |
+| **OpenStreetMap (OSM) POI Data**: [OpenStreetMap](https://www.openstreetmap.org/) | Detailed urban infrastructure and business location data. |
+| **SafeGraph POI Data**: [SafeGraph Data](https://www.safegraph.com/)| High-quality business location and visitor behavior data. |
 
-- **Detroit Crime Data**  
-  The Detroit Police Department offers access to crime data via its open data portal, including detailed crime reports and public safety metrics. This dataset is ideal for understanding crime trends in Detroit.
-  - **Website**: [Detroit Open Data Portal](https://data.detroitmi.gov/)
-  - **Direct Links to Crime Data**:
-    - [Reported Crimes in Detroit](https://data.detroitmi.gov/search?q=crimes&tags=public%2520safety)
-    - [Crime Viewer](https://data.detroitmi.gov/pages/crime-viewer)
+---
 
-- **UK Crime Data**
-  The UK Police Data portal aggregates crime data for England, Wales, and Northern Ireland. This resource includes data categorized by police forces and provides insights into crime outcomes and trends.
+**2.2 Traffic and Mobility Data**
 
-  - **Website**: [UK Police Data Portal](https://data.police.uk/)
-  - **Direct Links**:
-    - [Explore and Download Crime Data](https://data.police.uk/data/)
+| **Dataset** | **Description** |
+|------------|----------------|
+| **Uber Movement**: [Uber Movement](https://movement.uber.com/) | Provides traffic congestion patterns in major cities. |
+| **Google Traffic Data API**: [Google Maps Traffic API](https://developers.google.com/maps/documentation/traffic) | Real-time and historical traffic flow data. |
+| **US Department of Transportation**: [DOT Open Data](https://data.transportation.gov/) | National highway and urban mobility data. |
+
+---
+
+**2.3 Socioeconomic and Demographic Data**
+
+| **Dataset** | **Description** |
+|------------|----------------|
+| **US Census Data**: [Census Data](https://data.census.gov/cedsci/)| Includes income, education, and employment statistics. |
+| **American Community Survey (ACS)**: [ACS Data](https://www.census.gov/programs-surveys/acs)| Yearly socioeconomic insights. |
+| **WorldPop**: [WorldPop](https://www.worldpop.org/) | High-resolution population density data. |
+
+---
+
+**2.4 Weather and Environmental Data**
+
+| **Dataset** | **Description** |
+|------------|----------------|---------------|
+| **NOAA Climate Data**: [NOAA Data](https://www.ncdc.noaa.gov/cdo-web/) | Historical weather and climate trends. | 
+| **ERA5 Climate Reanalysis**: [ERA5 Data](https://cds.climate.copernicus.eu/) | High-resolution past climate conditions. |
+
+---
+
+**2.5 Public Transportation and Accessibility Data**
+
+| **Dataset** | **Description** |
+|------------|----------------|
+| **GTFS Transit Data**: [GTFS Data](https://transitfeeds.com/)| Public transport schedules and network coverage. |  
+| **OpenMobilityData**: [OpenMobilityData](https://www.openmobilitydata.org/) | Access to global transit network datasets. |  
+
+---
+
+**2.6 Social Media and 911 Call Data**
+
+| **Dataset** | **Description** | 
+|------------|----------------|
+| **Twitter API**: [Twitter Developer API](https://developer.twitter.com/) | Monitors real-time reports on crime and safety concerns. |
+| **NYC 311 & 911 Calls**: [NYC 311 Data](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9) | Public emergency service requests and reports. | 
+
+---
+
+**2.7 Law Enforcement and Patrol Data**
+
+| **Dataset** | **Description** |
+|------------|----------------|
+| **FBI Uniform Crime Reports (UCR)**: [FBI UCR](https://www.fbi.gov/services/cjis/ucr) | Nationwide official crime statistics. | 
+| **Seattle Police Patrol Data**: [Seattle Police Open Data](https://data.seattle.gov/Public-Safety/Real-Time-911/3k2p-39jp) | Real-time 911 call responses and dispatch logs. | 
