@@ -23,6 +23,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/vista/people/";
           },
+        },{id: "nav-app",
+          title: "App",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/vista/https:/chicago-crime-heatmap.vercel.app/";
+          },
         },{id: "post-a-post-with-image-galleries",
       
         title: "a post with image galleries",
