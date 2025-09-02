@@ -19,7 +19,20 @@ profiles:
     image: profiles/yong-zhuang.jpg
     content: about_yong-zhuang.md
     image_circular: false # crops the image to make it circular
-    more_info: >   
+    more_info: >     
+
+  - align: right
+    image: profiles/ishra-naznin.png
+    content: about_ishra-naznin.md
+    image_circular: false # crops the image to make it circular
+    more_info: > 
+    
+  - align: right
+    image: profiles/nishan-khanal.jpg
+    content: about_nishan-khanal.md
+    image_circular: false # crops the image to make it circular
+    more_info: > 
+
 
   - align: right
     image: profiles/patrick-waga.jpg
@@ -34,12 +47,6 @@ profiles:
     more_info: >   
 
   - align: right
-    image: profiles/nishan-khanal.jpg
-    content: about_nishan-khanal.md
-    image_circular: false # crops the image to make it circular
-    more_info: > 
-
-  - align: right
     image: profiles/erick-anangwe.jpg
     content: about_erick-anangwe.md
     image_circular: false # crops the image to make it circular
@@ -49,5 +56,5 @@ profiles:
     image: profiles/kyle-maitner.jpg
     content: about_kyle-maitner.md
     image_circular: false # crops the image to make it circular
-    more_info: > 
+    more_info: >     
 ---
