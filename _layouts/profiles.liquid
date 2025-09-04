@@ -3,34 +3,82 @@ layout: page
 ---
 <div class="post">
   <article>
-    {% if page.profiles %}
-      {% for profile in page.profiles %}
+
+    {%- if page.profiles and page.profiles.size > 0 -%}
+      <h2>Current Members</h2>
+      {%- for profile in page.profiles -%}
         <hr>
         <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
-          {% if profile.image %}
-            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-            {% if profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-            {% endif %}
-            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
-          {% endif %}
-          {% if profile.more_info %}
+          {%- if profile.image -%}
+            {%- assign profile_image_path = profile.image | prepend: 'assets/img/' -%}
+            {%- if profile.image_circular -%}
+              {%- assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' -%}
+            {%- else -%}
+              {%- assign profile_image_class = 'img-fluid z-depth-1 rounded' -%}
+            {%- endif -%}
+            {%- capture sizes -%}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw"{%- endcapture -%}
+            {%- include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image -%}
+          {%- endif -%}
+          {%- if profile.more_info -%}
             <div class="more-info">{{ profile.more_info }}</div>
-          {% endif %}
+          {%- endif -%}
         </div>
 
         <div class="clearfix">
-          {% if profile.content %}
-            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+          {%- if profile.content -%}
+            {%- capture profile_content -%}{% include_relative {{ profile.content }} %}{%- endcapture -%}
             {{ profile_content | markdownify }}
-          {% else %}
+          {%- else -%}
             {{ content }}
-          {% endif %}
+          {%- endif -%}
         </div>
-      {% endfor %}
-    {% endif %}
+      {%- endfor -%}
+    {%- endif -%}
+
+    {%- if page.alumni and page.alumni.size > 0 -%}
+      <h2 class="mt-5">Alumni</h2>
+
+      <style>
+        .alumni-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+          gap: 1rem;
+          margin-top: 1rem;
+        }
+        .alumni-card {
+          text-align: center;
+        }
+        .alumni-card img {
+          width: 100%;
+          height: 180px;
+          object-fit: cover;
+          border-radius: 0.75rem;
+        }
+        .alumni-caption {
+          margin-top: 0.5rem;
+          font-size: 0.95rem;
+        }
+        .alumni-caption a { text-decoration: none; }
+      </style>
+
+      <div class="alumni-grid">
+        {%- for a in page.alumni -%}
+          <div class="alumni-card">
+            {%- if a.image -%}
+              {%- assign img_path = a.image | prepend: 'assets/img/' -%}
+              <img src="{{ img_path | relative_url }}" alt="{{ a.more_info | escape }}">
+            {%- endif -%}
+            <div class="alumni-caption">
+              {%- if a.url -%}
+                <a href="{{ a.url }}" target="_blank" rel="noopener">{{ a.more_info }}</a>
+              {%- else -%}
+                {{ a.more_info }}
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
   </article>
 </div>

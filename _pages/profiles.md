@@ -32,29 +32,31 @@ profiles:
     content: about_nishan-khanal.md
     image_circular: false # crops the image to make it circular
     more_info: > 
-
-
+    
   - align: right
-    image: profiles/patrick-waga.jpg
-    content: about_patrick-waga.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-
-  - align: right
-    image: profiles/dileep-kalisetti.jpg
-    content: about_dileep-kalisetti.md
-    image_circular: false # crops the image to make it circular
-    more_info: >   
-
-  - align: right
-    image: profiles/erick-anangwe.jpg
-    content: about_erick-anangwe.md
+    image: profiles/rohith-anugolu.jpg
+    content: about_rohith-anugolu.md
     image_circular: false # crops the image to make it circular
     more_info: > 
 
-  - align: right
-    image: profiles/kyle-maitner.jpg
+alumni:
+  - image: profiles/patrick-waga.jpg
+    content: about_patrick-waga.md
+    image_circular: false # crops the image to make it circular
+    more_info: Patrick Waga | Graduate 
+
+  - image: profiles/dileep-kalisetti.jpg
+    content: about_dileep-kalisetti.md
+    image_circular: false # crops the image to make it circular
+    more_info: Dileep Kalisetti | Graduate    
+
+  - image: profiles/erick-anangwe.jpg
+    content: about_erick-anangwe.md
+    image_circular: false # crops the image to make it circular
+    more_info: Erick Anangwe | Graduate 
+
+  - image: profiles/kyle-maitner.jpg
     content: about_kyle-maitner.md
     image_circular: false # crops the image to make it circular
-    more_info: >     
+    more_info: Kyle Maitner | Undergraduate     
 ---
